@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.text {
+  font-size: 2rem;
+  animation: color 5s infinite;
+}
+
+@keyframes color {
+  0% {
+    color: red;
+    font-size: 50px;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+    font-size: 30px;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+    font-size: 50px;
+  }
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation: bounce 8s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 0.1;
+    scale: 1;
+  }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+    scale: 1.2;
+    width: 200px;
+    height: 200px;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.1;
+    scale: 1;
+  }
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10%;
+  animation: bounce2 4s infinite;
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translateY(0);
+    scale: 1;
+  }
+  50% {
+    transform: translateY(-30px);
+    scale: 1.5;
+  }
+  100% {
+    transform: translateY(0);
+    scale: 1;
+  }
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.line {
+  width: 300px;
+  height: 5px;
+  background-color: green;
+  animation: slide 5s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
